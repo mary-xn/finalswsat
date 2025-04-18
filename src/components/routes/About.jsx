@@ -54,7 +54,7 @@ export default function About() {
             This system was built with the goal of reducing manual work, minimizing errors, and bringing convenience to both barangay staff and residents.
           </p>
 
-          <div className="flex flex-wrap gap-5 px-2 sm:px-4 lg:px-7">
+          <div className="flex flex-wrap gap-5 px-2 sm:px-4 lg:px-7 justify-center xl:justify-start">
             <img data-tooltip-id="java" data-tooltip-content="Java" className={logoStyles} src={javaLogo} />
             <img data-tooltip-id="mySQL" data-tooltip-content="MySQL" className={logoStyles} src={mysqlLogo} />
             <img data-tooltip-id="react" data-tooltip-content="React" className={logoStyles} src={reactLogo} />
