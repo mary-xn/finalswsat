@@ -16,17 +16,14 @@ export default function Demo() {
     <motion.section
       id="demo"
       className="flex flex-col items-center gap-5 min-h-screen w-full pt-[100px] md:pt-[120px] lg:pt-[90px] px-4 md:px-8 relative"
-      variants={fadeIn('up', 0.7)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      
     >
-      <div className="text-center">
+      <motion.div className="text-center">
         <p className="font-bold text-4xl sm:text-5xl">Demo</p>
         <p className="text-base sm:text-lg lg:text-xl">
           See how the system works in real time.
         </p>
-      </div>
+      </motion.div>
 
       <div className="w-full max-w-6xl">
         <FeatureCarousel slides={slides} />

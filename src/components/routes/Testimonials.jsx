@@ -50,14 +50,14 @@ export default function Testimonials() {
     variants={fadeIn("up", 0.7)}
     initial="hidden"
     whileInView="show"
-    viewport={{ once: false, amount: 0.7 }}>
+    viewport={{ once: true, amount: 0.7 }}>
       <div className="gap-3 flex flex-col">
         <p className="font-bold text-5xl text-orange-400 text-center">Testimonials</p>
         <p className=" text-md lg:text-xl text-center">What my clients' say...</p>
       </div>
-      <div className="w-[60%] mx-auto">
+      <motion.div className="w-[60%] mx-auto">
         <TestimonialCarousel testimonials={testimonials} />
-      </div>
+      </motion.div>
     </motion.section>
   )
 }
