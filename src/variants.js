@@ -10,7 +10,7 @@ export const fadeIn = (direction = "up", delay = 0) => {
       x: 0,
       y: 0,
       transition: {
-        type: "spring",
+        type: "",
         duration: 1,
         bounce: 0.3,
       },
