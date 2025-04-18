@@ -78,13 +78,8 @@ export default function Home() {
   />
 </div>
 
-        <motion.div
-          className="absolute px-10 flex flex-col z-50 w-2xl bottom-[90%] right-[19.5%] top-[6%] transition-opacity duration-500  md:flex"
-          variants={fadeIn("left", 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
-        >
+      <motion.div id="absolutediv" className="absolute px-10 flex flex-col z-50 w-2xl bottom-[90%] right-[19.5%] top-[6%] transition-opacity duration-500 opacity-0 md:opacity-100">
+
           <motion.div
             className="absolute bg-gradient-to-r from-orange-200 via-orange-50 to-orange-200 w-[687px] rounded-xl h-[438px] z-10 "
             variants={fadeIn("left", 0.5)}
