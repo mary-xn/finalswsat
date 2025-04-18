@@ -41,7 +41,7 @@ export default function Features() {
       variants={fadeIn("up", 0.7)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false}}
+      viewport={{ once: true}}
       >
         <div className={featureDiv}>
           <div ><GrDocumentPdf className={icon}/></div>
