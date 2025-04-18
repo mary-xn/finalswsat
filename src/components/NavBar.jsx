@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
-import docuLogoo from '../../public/docuLogoo.png'
+import docuLogoo from '../assets/docuLogoo.png'
 import { IoMenuOutline } from "react-icons/io5"
 
 export default function NavBar() {
