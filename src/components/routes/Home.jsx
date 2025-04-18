@@ -35,20 +35,20 @@ export default function Home() {
       className="flex flex-col xl:flex-row px-10 py-5 gap-[10px] items-center justify-center min-h-screen min-w-screen scroll-mt-32"
     >
       <motion.div
-        className="mb-5 text-center lg:text-left"
+        className="mb-5 text-center xl:text-left lg:text-center "
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
       >
         <div>
-          <p className="text-4xl  text-center lg:text-left lg:text-7xl font-bold mb-5">
+          <p className="text-4xl  lg:text-7xl font-bold mb-5">
             <span className="text-orange-700">Revolutionizing</span> Barangay Document Requests
           </p>
         </div>
 
         <div>
-          <p className="text-2xl lg:text-4xl mb-5 italic text-orange-600">
+          <p className="text-2xl  lg:text-4xl mb-5 italic text-orange-600">
             Automated. Accurate. Easy.
           </p>
         </div>
