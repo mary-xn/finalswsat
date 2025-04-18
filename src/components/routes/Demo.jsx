@@ -6,7 +6,6 @@ import scanInfo from '../../assets/demoVid/scanInfo.mp4';
 import addNew from '../../assets/demoVid/addNew.mp4';
 import viewRes from '../../assets/demoVid/viewRes.mp4';
 import logOut from '../../assets/demoVid/logOut.mp4';
-import { fadeIn } from '../../variants.js';
 import { motion } from 'motion/react';
 
 export default function Demo() {
@@ -15,7 +14,7 @@ export default function Demo() {
   return (
     <motion.section
       id="demo"
-      className="flex flex-col items-center gap-5 min-h-screen w-full pt-[100px] md:pt-[120px] lg:pt-[90px] px-4 md:px-8 relative"
+      className="flex flex-col items-center gap-5 min-h-screen w-full pt-[100px] md:pt-[30px] lg:pt-[10px] px-4 md:px-8 relative"
       
     >
       <motion.div className="text-center">

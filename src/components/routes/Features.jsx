@@ -25,7 +25,7 @@ export default function Features() {
     initial="hidden"
     whileInView="show"
 
-    viewport={{ once: false}}>
+    viewport={{ once: true}}>
       <motion.div variants={fadeIn("up", 0.7)}
       initial="hidden"
       whileInView="show"
