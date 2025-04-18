@@ -16,4 +16,6 @@ export default defineConfig({
   variants: {
     scrollBehavior: ['responsive'],
   },
+  base: process.env.VITE_BASE_PATH || "/finalswsat"
+
 })
