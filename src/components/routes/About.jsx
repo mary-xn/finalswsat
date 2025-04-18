@@ -28,7 +28,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-10 max-w-screen-2xl w-full">
+      <div className="grid grid-cols-1 xl:grid-cols-2 items-center justify-center gap-10 max-w-screen-2xl w-full">
         <motion.div
           variants={fadeIn('up', 0.4)}
           initial="hidden"
