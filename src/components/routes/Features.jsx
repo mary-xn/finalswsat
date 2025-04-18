@@ -20,7 +20,7 @@ export default function Features() {
 
 
   return (
-    <motion.section id="features" className="flex flex-col w-full items-center  gap-25  px-5 py-50 "
+    <motion.section id="features" className="flex flex-col w-full items-center  gap-25  px-5 py-20 xl:py-50 "
     variants={fadeIn("up", 0.7)}
     initial="hidden"
     whileInView="show"
@@ -31,7 +31,7 @@ export default function Features() {
       whileInView="show"
       
       viewport={{ once: false}}>
-        <p className="text-center text-4xl lg:text-6xl font-semibold text-orange-400">Features</p>
+        <p className="text-center text-5xl lg:text-6xl font-bold text-orange-400">Features</p>
         <p className=" text-md lg:text-xl text-center">What makes the system easy and efficient to use.</p>
       </motion.div>
 

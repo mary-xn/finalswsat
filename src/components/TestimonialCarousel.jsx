@@ -18,7 +18,7 @@ export default function TestimonialCarousel({ testimonials }) {
     <div className="bg-transparent h-auto w-[90vw] sm:w-[300px] md:w-[400px] lg:w-[900px] p-6 rounded-xl shadow-md transition duration-300 hover:shadow-xl text-center flex flex-col justify-center items-center gap-5">
 
       <div>
-      <img src={quote} className="absolute  left-36 sm:left-[47%] lg:top-4 lg:left-[50%] w-[40px] lg:w-[50px] bg-orange-500 rounded-full" />
+      <img src={quote} className="absolute  left-[47%] lg:top-4 lg:left-[50%] w-[40px] lg:w-[50px] bg-orange-500 rounded-full" />
 
       </div>
 

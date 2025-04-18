@@ -14,11 +14,11 @@ export default function Demo() {
   return (
     <motion.section
       id="demo"
-      className="flex flex-col items-center gap-5 min-h-screen w-full pt-[100px] md:pt-[30px] lg:pt-[10px] px-4 md:px-8 relative"
+      className="flex flex-col items-center gap-5  w-full pt-[100px] md:pt-[30px] lg:pt-[20px] px-4 py-20 md:px-8 relative"
       
     >
       <motion.div className="text-center">
-        <p className="font-bold text-4xl sm:text-5xl">Demo</p>
+        <p className="font-bold text-5xl">Demo</p>
         <p className="text-base sm:text-lg lg:text-xl">
           See how the system works in real time.
         </p>

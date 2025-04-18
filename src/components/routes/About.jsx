@@ -15,14 +15,14 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="flex flex-col min-h-screen w-full items-center justify-center gap-20 px-4 md:px-10"
+      className="flex flex-col  w-full items-center justify-center gap-20 px-4 md:px-10 pt-[120px] xl:pt-[100px]"
       variants={fadeIn('up', 0.4)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.4 }}
     >
       <div>
-        <h2 className="text-center text-4xl sm:text-5xl lg:text-6xl font-semibold">About</h2>
+        <h2 className="text-center font-bold text-5xl ">About</h2>
         <p className="text-md sm:text-lg lg:text-xl text-center">
           Learn more about the system and its purpose.
         </p>
@@ -33,7 +33,7 @@ export default function About() {
           variants={fadeIn('up', 0.4)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.4 }}
         >
           <img src={webprev} alt="Web Preview" className="w-full object-contain" />
         </motion.div>
@@ -42,7 +42,7 @@ export default function About() {
           variants={fadeIn('up', 0.4)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.4 }}
         >
           <p className="text-justify text-lg sm:text-xl lg:text-2xl px-2 sm:px-4 lg:px-7">
             The <span className="italic font-bold text-orange-500">Barangay Document Request System</span> is a smart, user-friendly platform designed to streamline the process of requesting and processing official documents within the barangay. It empowers barangay officials—especially the Barangay Secretary—to manage document requests efficiently, accurately, and securely.

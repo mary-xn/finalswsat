@@ -37,8 +37,10 @@ export default function NavBar() {
   `
 
   const handleLinkClick = (id) => {
-    setActiveSection(id)
-    setTimeout(() => setMenuOpen(false), 300) 
+    if (activeSection !== id) {
+      setActiveSection(id)
+    }
+    setTimeout(() => setMenuOpen(false), 300)
   }
 
   return (
@@ -63,7 +65,7 @@ export default function NavBar() {
               to={section.id}
               smooth={true}
               duration={500}
-              offset={-120}
+              offset={-90}
               spy={true}
               onSetActive={() => setActiveSection(section.id)}
               className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}
@@ -77,6 +79,7 @@ export default function NavBar() {
             duration={500}
             offset={-100}
             spy={true}
+            onClick={() => handleLinkClick('contact')}
             onSetActive={() => setActiveSection('contact')}
             className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
           >

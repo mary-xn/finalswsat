@@ -53,7 +53,7 @@ export default function Home() {
           </p>
         </div>
 
-        <a href="#about" className="border px-3 py-2 rounded-sm text-xl hover:text-white hover:bg-orange-700 active:bg-orange-900 hover:cursor-pointer hover:ring-orange-500">
+        <a href="#about" className="border px-3 py-2 rounded-sm text-xl hover:text-white hover:bg-orange-700 active:bg-orange-900 hover:cursor-pointer hover:ring-orange-500 ">
           Learn More
         </a>
 
