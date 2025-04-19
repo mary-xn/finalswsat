@@ -18,7 +18,7 @@ export default function Demo() {
       
     >
       <motion.div className="text-center">
-        <p className="font-bold text-5xl">Demo</p>
+        <p className="font-bold text-5xl lg:text-6xl ">Demo</p>
         <p className="text-base sm:text-lg lg:text-xl">
           See how the system works in real time.
         </p>

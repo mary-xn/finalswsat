@@ -7,24 +7,54 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants';
 
 export default function Features() {
+  
   const featureDiv = `
-    circle-fill px-8 py-4 bg-white rounded-lg transition-all duration-500 transform 
-    lg:hover:-translate-y-5 hover:shadow-lg ease-in-out hover:duration-800 
-    hover:cursor-pointer group hover:text-white flex flex-col items-center xl:items-start
-    active:scale-95 active:rotate-2
+    relative
+     px-8 py-4 xl:bg-orange-50 md:bg-white  rounded-lg transition-all duration-500 transform 
+    lg:hover:-translate-y-5 hover:shadow-lg ease-in-out hover:duration-800 lg:hover:bg-orange-600
+    md:hover:bg-orange-600
+    hover:cursor-pointer group hover:text-white flex flex-col items-center gap-4 
+    xl:active:scale-95 xl:active:rotate-2  
+    md:active:scale-95 
+    bg-orange-700 
   `;
 
-  const description = `
-    text-black text-justify group-hover:text-white group-active:text-white
+  const description = ` lg:text-md
+  text-white md:text-black xl:text-black  text-justify group-hover:text-white
+  
   `;
 
   const icon = `
-    text-black text-5xl text-center group-hover:text-white group-active:text-white
+    absolute
+    bottom-[92%]
+    left-[43%]
+    md:bottom-[92%]
+    md:left-[46%]
+    lg:bottom-[95%]
+    lg:left-[41%]
+    xl:bottom-[92%]
+    xl:left-[43%]
+    2xl:bottom-[91%]
+    2xl:left-[45%]
+    xl:bg-orange-100
+    rounded-full
+    py-2
+    md:bg-orange-50
+    bg-orange-700
+    transition-all duration-500 
+    xl:group-hover:bg-orange-600
+     md:text-black text-white xl:text-black text-5xl text-center group-hover:text-white
   `;
 
   const title = `
-    text-2xl text-black text-center xl:text-left font-bold w-[290px] mb-5 
-    group-hover:text-white group-active:text-white
+    text-2xl text-white md:text-black xl:text-black  text-center  font-bold w-[290px] mb-5 
+    group-hover:text-white 
+    md:text-2xl
+    md:w-[190px]
+    lg:text-2xl
+    lg:w-[200px]
+    xl:text-2xl
+    xl:w-[280px]
   `;
 
   return (
@@ -35,11 +65,11 @@ export default function Features() {
       viewport={{ once: true }}>
       
       <motion.div variants={fadeIn("up", 0.7)} initial="hidden" whileInView="show" viewport={{ once: false }}>
-        <p className="text-center text-5xl lg:text-6xl font-bold text-orange-500">Features</p>
+        <p className="text-center text-5xl lg:text-6xl font-bold text-white xl:text-orange-500 md:text-orange-500 2xl:text-orange-500">Features</p>
         <p className="text-md lg:text-xl text-center">What makes the system easy and efficient to use.</p>
       </motion.div>
 
-      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-center "
+      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-6 w-full justify-center "
         variants={fadeIn("up", 0.7)} initial="hidden" whileInView="show" viewport={{ once: true }}>
         
         <div className={featureDiv}>

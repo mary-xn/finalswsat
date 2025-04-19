@@ -22,7 +22,7 @@ export default function About() {
       viewport={{ once: true, amount: 0.4 }}
     >
       <div>
-        <h2 className="text-center font-bold text-5xl ">About</h2>
+        <h2 className="text-center font-bold text-5xl lg:text-6xl  ">About</h2>
         <p className="text-md sm:text-lg lg:text-xl text-center">
           Learn more about the system and its purpose.
         </p>

@@ -19,6 +19,7 @@
   }
 }
 
+
 body {
  /* overflow: hidden; */
  overflow-x: hidden;
@@ -43,6 +44,7 @@ html {
   width: 0;
   height: 0;
   background-color: #ff5b0a; 
+  color:white;
   border-radius: 9999px;
   transform: translate(-50%, -50%);
   transition: width 0.4s ease, height 0.4s ease;
@@ -54,4 +56,15 @@ html {
   height: 300%;
 }
 
+.circle-fill:active::before {
+  width: 300%;
+  height: 300%;
+  color:white;
+}
+
+.circle-fill:active::before {
+  width: 300%;
+  height: 300%;
+  color:white;
+}
 
