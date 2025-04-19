@@ -26,24 +26,28 @@ export default function Features() {
 
   const icon = `
     absolute
-    bottom-[92%]
-    left-[43%]
+    bottom-[91%]
+    left-[44%]
+    xs:bottom-[90%]
+    xs:left-[45%]
     md:bottom-[92%]
-    md:left-[46%]
+    md:left-[45%]
     lg:bottom-[95%]
     lg:left-[41%]
     xl:bottom-[92%]
     xl:left-[43%]
     2xl:bottom-[91%]
     2xl:left-[45%]
-    xl:bg-orange-100
+    xl:bg-white
+    2xl:bg-orange-50
     rounded-full
     py-2
-    md:bg-orange-50
+    md:bg-white
     bg-orange-700
     transition-all duration-500 
     xl:group-hover:bg-orange-600
      md:text-black text-white xl:text-black text-5xl text-center group-hover:text-white
+     md:group-hover:bg-orange-600
   `;
 
   const title = `
