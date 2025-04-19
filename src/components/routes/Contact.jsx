@@ -25,7 +25,7 @@ export default function Contact() {
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
-       viewport={{ once: false, amount: 0.7 }}>
+       viewport={{ once: true, amount: 0.7 }}>
         <img
           src={contactimg}
           alt="Girl illustration"

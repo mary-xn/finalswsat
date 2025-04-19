@@ -17,23 +17,23 @@ export default function NavBar() {
 
   const routeStyles = `
     text-base
-    hover:text-orange-700
+    text-white
+    hover:text-orange-500
     hover:cursor-pointer
-    hover:shadow-xs
     transition
     duration-200
   `
 
   const contactStyles = `
-    border 
-    px-3 
-    py-2 
-    rounded-4xl
+    border border-orange-500
+    text-white
+    px-4 py-2
+    rounded-full
+    hover:bg-orange-600
     hover:text-white
-    hover:bg-orange-700
-    hover:cursor-pointer
     transition
     duration-200
+    cursor-pointer
   `
 
   const handleLinkClick = (id) => {
@@ -44,20 +44,23 @@ export default function NavBar() {
   }
 
   return (
-    <nav className="fixed top-0 z-[9999] bg-black/5 shadow-sm backdrop-blur-xs">
+    <nav className="fixed top-0 z-[9999] w-full bg-black/20 shadow-sm backdrop-blur-md">
       <div className="flex justify-between items-center px-5 py-4 md:px-10 md:py-5">
         
-        <div className="flex justify-center items-center gap-1">
-        <img className="w-[50px]  " src={docuLogoo}></img>
-        <div className="text-xl font-bold">
-          Docu<span className="text-orange-700">Forge</span>
-        </div>
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <img className="w-[50px]" src={docuLogoo} alt="DocuForge Logo" />
+          <div className="text-xl font-bold text-white">
+            Docu<span className="text-orange-600">Forge</span>
+          </div>
         </div>
 
-        <div className="md:hidden text-3xl text-orange-500 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+      
+        <div className=" text-3xl text-orange-500 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
           <IoMenuOutline />
         </div>
 
+       
         <div className="hidden md:flex gap-9 items-center">
           {sections.map((section) => (
             <Link
@@ -81,7 +84,7 @@ export default function NavBar() {
             spy={true}
             onClick={() => handleLinkClick('contact')}
             onSetActive={() => setActiveSection('contact')}
-            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
+            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-600 text-white font-semibold' : ''}`}
           >
             Contact Us
           </Link>
@@ -89,14 +92,14 @@ export default function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-6 bg-transparent text-red-200 py-6 shadow-md rounded-b-lg z-[100]">
+        <div className="md:hidden flex flex-col items-center gap-5 py-6 bg-black/80 text-white shadow-md rounded-b-lg z-[100]">
           {sections.map((section) => (
             <Link
               key={section.id}
               to={section.id}
               smooth={true}
               duration={500}
-              offset={-500}
+              offset={-50}
               spy={true}
               onClick={() => handleLinkClick(section.id)}
               className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}
@@ -111,7 +114,7 @@ export default function NavBar() {
             offset={-100}
             spy={true}
             onClick={() => handleLinkClick('contact')}
-            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
+            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-600 text-white font-semibold' : ''}`}
           >
             Contact Us
           </Link>
