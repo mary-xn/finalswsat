@@ -56,7 +56,7 @@ export default function NavBar() {
         </div>
 
       
-        <div className=" text-3xl text-orange-500 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="md:hidden text-3xl text-orange-500 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
           <IoMenuOutline />
         </div>
 
@@ -92,7 +92,7 @@ export default function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-5 py-6 bg-black/80 text-white shadow-md rounded-b-lg z-[100]">
+        <div className="md:hidden flex flex-col items-center gap-5 py-6 bg-black/80 text-white shadow-md rounded-b-lg z-50">
           {sections.map((section) => (
             <Link
               key={section.id}
