@@ -12,11 +12,11 @@ export default function Features() {
   circle-fill px-8 py-4  bg-white rounded-lg transition-all duration-500 transform lg:hover:-translate-y-5  hover:shadow-lg ease-in-out hover:duration-800 hover:cursor-pointer group hover:text-white flex flex-col items-center xl:items-start
   `
 
-  const description = `text-black  text-justify group-hover:text-white  `
+  const description = `text-black  text-justify group-hover:text-white group-active:text-white  `
 
-  const icon = `text-black  text-5xl text cen group-hover:text-white`
+  const icon = `text-black  text-5xl text cen group-hover:text-white group-active:text-white `
 
-  const title=`text-2xl text-black text-center xl:text-left font-bold w-[290px] mb-5 group-hover:text-white `
+  const title=`text-2xl text-black text-center xl:text-left font-bold w-[290px] mb-5 group-hover:text-white group-active:text-white `
 
 
   return (
