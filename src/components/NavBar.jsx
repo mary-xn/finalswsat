@@ -113,7 +113,7 @@ export default function NavBar() {
             onClick={() => handleLinkClick('contact')}
             className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
           >
-            Contact Us
+            Contacts
           </Link>
         </div>
       )}
