@@ -14,7 +14,7 @@ export default function Demo() {
   return (
     <motion.section
       id="demo"
-      className="flex flex-col items-center gap-5  w-full pt-[100px] md:pt-[30px] lg:pt-[20px] px-4 py-20 md:px-8 relative"
+      className="flex flex-col items-center gap-5  w-full pt-[100px] md:pt-[30px] lg:pt-[20px] px-4 py-20 md:px-8 relative  pb-[200px]"
       
     >
       <motion.div className="text-center">
