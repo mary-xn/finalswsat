@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="flex flex-col xl:flex-row px-10 py-5 gap-[10px] items-center justify-center min-h-screen min-w-screen scroll-mt-32 relative"
+      className="flex flex-col xl:flex-row px-10 py-5 gap-[10px] items-center justify-center min-h-screen min-w-screen scroll-mt-32 relative pt-[100px] md:pt-[30px] lg:pt-[20px]"
     >
       <motion.div
         className="mb-5 text-center xl:text-left lg:text-center relative"

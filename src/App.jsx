@@ -13,7 +13,7 @@ import Testimonials from './components/routes/Testimonials';
 export default function App() {
   return (
     <div className="font-poppins relative min-h-screen">
-    {/* Dynamic background that grows with content */}
+      
     <div className="fixed inset-0 -z-10 h-full w-full bg-black bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[length:20px_20px]" />
   
     <NavBar />

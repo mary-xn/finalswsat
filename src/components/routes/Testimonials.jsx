@@ -52,7 +52,7 @@ export default function Testimonials() {
     whileInView="show"
     viewport={{ once: true, amount: 0.7 }}>
       <div className="gap-3 flex flex-col">
-        <p className="font-bold text-5xl text-orange-400 text-center">Testimonials</p>
+        <p className="font-bold text-5xl text-orange-500 text-center">Testimonials</p>
         <p className=" text-md lg:text-xl text-center">What my clients' say...</p>
       </div>
       <motion.div className="w-[60%] mx-auto">

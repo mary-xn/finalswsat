@@ -31,7 +31,7 @@ export default function Features() {
       whileInView="show"
       
       viewport={{ once: false}}>
-        <p className="text-center text-5xl lg:text-6xl font-bold text-orange-400">Features</p>
+        <p className="text-center text-5xl lg:text-6xl font-bold text-orange-500">Features</p>
         <p className=" text-md lg:text-xl text-center">What makes the system easy and efficient to use.</p>
       </motion.div>
 
