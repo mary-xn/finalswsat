@@ -32,10 +32,10 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="flex flex-col xl:flex-row px-10 py-5 gap-[10px] items-center justify-center min-h-screen min-w-screen scroll-mt-32"
+      className="flex flex-col xl:flex-row px-10 py-5 gap-[10px] items-center justify-center min-h-screen min-w-screen scroll-mt-32 relative"
     >
       <motion.div
-        className="mb-5 text-center xl:text-left lg:text-center "
+        className="mb-5 text-center xl:text-left lg:text-center relative"
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView="show"

@@ -15,7 +15,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="flex flex-col  w-full items-center justify-center gap-20 px-4 md:px-10 pt-[120px] xl:pt-[100px]"
+      className="flex flex-col  w-full items-center justify-center gap-20 px-4 md:px-10 pt-[120px] xl:pt-[100px] relative"
       variants={fadeIn('up', 0.4)}
       initial="hidden"
       whileInView="show"

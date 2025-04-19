@@ -16,49 +16,47 @@ export default function NavBar() {
   ]
 
   const routeStyles = `
-    text-base
-    hover:text-orange-700
-    hover:cursor-pointer
-    hover:shadow-xs
-    transition
-    duration-200
+    text-base  
+    hover:text-orange-500 
+    transition duration-200 
+    cursor-pointer
   `
 
   const contactStyles = `
-    border 
-    px-3 
-    py-2 
-    rounded-4xl
-    hover:text-white
-    hover:bg-orange-700
-    hover:cursor-pointer
-    transition
-    duration-200
+    border border-orange-600 text-white
+    px-4 py-2 rounded-full 
+    hover:bg-orange-700 
+    hover:text-white 
+    transition duration-200 
+    cursor-pointer
   `
 
   const handleLinkClick = (id) => {
-    if (activeSection !== id) {
-      setActiveSection(id)
-    }
+    setActiveSection(id)
     setTimeout(() => setMenuOpen(false), 300)
   }
 
   return (
-    <nav className="sticky top-0 z-[99] bg-black/5 shadow-sm backdrop-blur-xs">
-      <div className="flex justify-between items-center px-5 py-4 md:px-10 md:py-5">
+    <nav className="fixed top-0 left-0 w-full z-[9999] bg-black/20 shadow-md backdrop-blur-md">
+      <div className="flex justify-between items-center px-5 py-4 md:px-10">
         
-        <div className="flex justify-center items-center gap-1">
-        <img className="w-[50px]  " src={docuLogoo}></img>
-        <div className="text-xl font-bold">
-          Docu<span className="text-orange-700">Forge</span>
-        </div>
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <img src={docuLogoo} alt="DocuForge Logo" className="w-[50px]" />
+          <div className="text-xl font-bold text-white">
+            Docu<span className="text-orange-600">Forge</span>
+          </div>
         </div>
 
-        <div className="md:hidden text-3xl text-orange-500 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+        {/* Mobile Menu Icon */}
+        <div
+          className="md:hidden text-3xl text-orange-500 cursor-pointer"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           <IoMenuOutline />
         </div>
 
-        <div className="hidden md:flex gap-9 items-center">
+        <div className="hidden md:flex gap-8 items-center">
           {sections.map((section) => (
             <Link
               key={section.id}
@@ -73,15 +71,15 @@ export default function NavBar() {
               {section.label}
             </Link>
           ))}
+
           <Link
             to="contact"
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-90}
             spy={true}
             onClick={() => handleLinkClick('contact')}
-            onSetActive={() => setActiveSection('contact')}
-            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
+            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-600 text-white font-semibold' : ''}`}
           >
             Contact Us
           </Link>
@@ -89,14 +87,14 @@ export default function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-6 bg-transparent text-red-200 py-6 shadow-md rounded-b-lg z-[100]">
+        <div className="md:hidden flex flex-col items-center gap-5 py-5 bg-black/30 text-white shadow-md transition-all duration-300">
           {sections.map((section) => (
             <Link
               key={section.id}
               to={section.id}
               smooth={true}
               duration={500}
-              offset={-500}
+              offset={-90}
               spy={true}
               onClick={() => handleLinkClick(section.id)}
               className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}
@@ -108,10 +106,10 @@ export default function NavBar() {
             to="contact"
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-90}
             spy={true}
             onClick={() => handleLinkClick('contact')}
-            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
+            className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-600 text-white font-semibold' : ''}`}
           >
             Contact Us
           </Link>
