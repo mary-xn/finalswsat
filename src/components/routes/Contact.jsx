@@ -117,7 +117,7 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <div className="text-right">
+          <div className="text-center xl:text-right">
             <button
               type="submit"
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md shadow-md transition duration-200 hover:cursor-pointer"
