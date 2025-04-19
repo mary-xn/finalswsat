@@ -16,7 +16,10 @@ export default function Features() {
     hover:cursor-pointer group hover:text-white flex flex-col items-center gap-4 
     xl:active:scale-95 xl:active:rotate-2  
     md:active:scale-95 
-    bg-orange-700 
+    border
+     xl:border-none
+     md:border-none
+    border-orange-700 
   `;
 
   const description = ` lg:text-md
@@ -26,7 +29,7 @@ export default function Features() {
 
   const icon = `
     absolute
-    bottom-[91%]
+    bottom-[94%]
     left-[44%]
     xs:bottom-[90%]
     xs:left-[45%]
@@ -34,16 +37,20 @@ export default function Features() {
     md:left-[45%]
     lg:bottom-[95%]
     lg:left-[41%]
-    xl:bottom-[92%]
-    xl:left-[43%]
+    xl:bottom-[93%]
+    xl:left-[44%]
     2xl:bottom-[91%]
     2xl:left-[45%]
-    xl:bg-white
     2xl:bg-orange-50
     rounded-full
     py-2
+     md:border-none
     md:bg-white
+    xl:border-none
+    border
+    xl:bg-orange-50
     bg-orange-700
+    border-orange-700
     transition-all duration-500 
     xl:group-hover:bg-orange-600
      md:text-black text-white xl:text-black text-5xl text-center group-hover:text-white

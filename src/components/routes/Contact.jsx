@@ -13,10 +13,10 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="flex flex-col lg:flex-row items-center justify-center min-h-screen w-full px-4 py-10"
+      className="flex flex-col lg:flex-row items-center justify-center  w-full px-4 py-10"
 
       variants={fadeIn("up", 0.5)}
-      initial="show"
+      initial="hidden"
       whileInView="show"
        viewport={{ once: true, amount: 0.7 }}
     >
