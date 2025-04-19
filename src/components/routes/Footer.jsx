@@ -13,6 +13,7 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-white ">Docu<span className="text-orange-500">Forge</span></h3>
           </div>
           <p className="text-xs text-gray-400">Developed with ❤️ for the community</p>
+          <p className="text-xs text-gray-400">Developer: Mary Sembrero</p>
         </div>
         
         <div className="flex gap-4 text-lg">
