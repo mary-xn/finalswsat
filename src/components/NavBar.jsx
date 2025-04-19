@@ -96,7 +96,7 @@ export default function NavBar() {
               to={section.id}
               smooth={true}
               duration={500}
-              offset={-50}
+              offset={-150}
               spy={true}
               onClick={() => handleLinkClick(section.id)}
               className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}
