@@ -16,9 +16,9 @@ export default function Contact() {
       className="flex flex-col lg:flex-row items-center justify-center min-h-screen w-full px-4 py-10"
 
       variants={fadeIn("up", 0.5)}
-      initial="hidden"
+      initial="show"
       whileInView="show"
-       viewport={{ once: false, amount: 0.7 }}
+       viewport={{ once: true, amount: 0.7 }}
     >
       <motion.div className="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0"
       
@@ -40,7 +40,7 @@ export default function Contact() {
       variants={fadeIn("up", 0.5)}
       initial="hidden"
       whileInView="show"
-       viewport={{ once: false, amount: 0.7 }}>
+       viewport={{ once: true, amount: 0.7 }}>
           <div className="flex flex-col items-start mb-9">
           <h3 className="font-semibold text-3xl text-orange-600">Work With Me!</h3>
           <p className="text-gray-700 text-sm mb-2">
