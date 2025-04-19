@@ -83,7 +83,7 @@ export default function NavBar() {
             onSetActive={() => setActiveSection('contact')}
             className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}
           >
-            Contact Us
+            Contacts
           </Link>
         </div>
       </div>
