@@ -4,7 +4,7 @@ import docuLogoo from '../../assets/docuLogoo.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-4 px-5 mt-10">
+    <footer className="bg-slate-950 text-white py-4 px-5 mt-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         
         <div className="text-center md:text-left">

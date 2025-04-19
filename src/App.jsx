@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="font-poppins relative min-h-screen">
 
-    <div className="fixed inset-0 -z-10 h-full w-full bg-black bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[length:20px_20px]" />
+    <div class="fixed inset-0 -z-10 h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div></div>
   
     <NavBar />
     <Home />
@@ -25,6 +25,7 @@ export default function App() {
     <Testimonials />
     <Contact />
     <Footer/>
+    
   </div>
   )
 }
