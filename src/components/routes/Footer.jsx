@@ -18,25 +18,16 @@ export default function Footer() {
         
         <div className="flex gap-4 text-lg">
           <a 
-            href="https://facebook.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
             className="hover:text-orange-500 transition-colors"
           >
             <FaFacebookF />
           </a>
           <a 
-            href="https://github.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
             className="hover:text-orange-500 transition-colors"
           >
             <FaGithub />
           </a>
           <a 
-            href="https://linkedin.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
             className="hover:text-orange-500 transition-colors"
           >
             <FaLinkedinIn />

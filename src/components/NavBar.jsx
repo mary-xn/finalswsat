@@ -65,7 +65,7 @@ export default function NavBar() {
               to={section.id}
               smooth={true}
               duration={500}
-              offset={-90}
+              offset={-100}
               spy={true}
               onSetActive={() => setActiveSection(section.id)}
               className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}

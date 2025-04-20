@@ -1,6 +1,5 @@
 import React from 'react'
 import { CiFacebook } from "react-icons/ci";
-import { FaXTwitter } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import contactimg from '../../assets/contactimg.png'
@@ -49,7 +48,6 @@ export default function Contact() {
           
             <div className="flex gap-2">
             <CiFacebook className={iconStyles} />
-            <FaXTwitter className={iconStyles} />
             <CiInstagram className={iconStyles} />
             <CiLinkedin  className={iconStyles} />
             </div>
