@@ -1,7 +1,7 @@
 import React from 'react'
-import webprev from '../../assets/webprev.png'
+import webprev from '../../../assets/webprev.png'
 import { motion } from 'motion/react'
-import { fadeIn } from '../../variants'
+import { fadeIn } from '../../../variants'
 import { TiUserAddOutline } from "react-icons/ti"
 import { GrGroup } from "react-icons/gr"
 import { LuScanQrCode } from "react-icons/lu"
@@ -78,10 +78,10 @@ export default function Home() {
   />
 </div>
 
-      <motion.div id="absolutediv" className="absolute px-10 flex flex-col z-50 w-2xl bottom-[90%] right-[19.5%] top-[6%] transition-opacity duration-500 opacity-0 md:opacity-100">
+      <motion.div id="absolutediv" className="absolute px-10 flex flex-col z-50 w-2xl bottom-[90%] right-[20%] top-[6%] transition-opacity duration-500 opacity-0 md:opacity-100">
 
           <motion.div
-            className="absolute bg-gradient-to-r from-orange-200 via-orange-50 to-orange-200 w-[687px] rounded-xl h-[438px] z-10 "
+            className="absolute bg-gradient-to-r from-orange-200 via-orange-50 to-orange-200 w-[695px] rounded-xl h-[438px] z-10 "
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView="show"

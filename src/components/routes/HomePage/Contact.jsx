@@ -2,8 +2,8 @@ import React from 'react'
 import { CiFacebook } from "react-icons/ci";
 import { CiInstagram } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
-import contactimg from '../../assets/contactimg.png'
-import { fadeIn } from '../../variants';
+import contactimg from '../../../assets/contactimg.png'
+import { fadeIn } from '../../../variants';
 import { motion } from "framer-motion";
 
 export default function Contact() {

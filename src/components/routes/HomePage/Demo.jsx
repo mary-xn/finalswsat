@@ -1,11 +1,11 @@
 import React from 'react';
-import FeatureCarousel from '../../FeatureCarousel.jsx';
-import login from '../../assets/demoVid/login.mp4';
-import brgyDocu from '../../assets/demoVid/brgyDocu.mp4';
-import scanInfo from '../../assets/demoVid/scanInfo.mp4';
-import addNew from '../../assets/demoVid/addNew.mp4';
-import viewRes from '../../assets/demoVid/viewRes.mp4';
-import logOut from '../../assets/demoVid/logOut.mp4';
+import FeatureCarousel from '../../../FeatureCarousel';
+import login from '../../../assets/demoVid/login.mp4';
+import brgyDocu from '../../../assets/demoVid/brgyDocu.mp4';
+import scanInfo from '../../../assets/demoVid/scanInfo.mp4';
+import addNew from '../../../assets/demoVid/addNew.mp4';
+import viewRes from '../../../assets/demoVid/viewRes.mp4';
+import logOut from '../../../assets/demoVid/logOut.mp4';
 import { motion } from 'motion/react';
 
 export default function Demo() {
@@ -14,7 +14,7 @@ export default function Demo() {
   return (
     <motion.section
       id="demo"
-      className="flex flex-col items-center gap-5  w-full pt-[100px] md:pt-[30px] lg:pt-[20px] px-4 py-20 md:px-8 relative  pb-[200px]"
+      className="flex flex-col items-center gap-5  w-full pt-[100px] md:pt-[30px] xl:pt-[0px]  px-4  md:px-8 relative min-w-screen min-h-screen"
       
     >
       <motion.div className="text-center">

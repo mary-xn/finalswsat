@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa"
-import docuLogoo from '../../assets/docuLogoo.png'
+import docuLogoo from '../../../assets/docuLogoo.png'
 
 export default function Footer() {
   return (
