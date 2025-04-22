@@ -11,7 +11,7 @@ export default function Secure() {
   const iconStyles = `xl:text-6xl md:text-6xl text-5xl `
   const titleStyles = `xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-bold`
 
-  const subtitleStyles =`xl:text-2xl md:text-2xl sm:text-xl text-md flex font-semibold text-orange-500`
+  const subtitleStyles =`xl:text-2xl md:text-2xl sm:text-xl text-md flex font-semibold text-orange-600`
   const descriptionStyles=`xl:text-lg md:text-lg sm:text-xl text-sm flex text-justify`
 
   const containerStyles = ` flex flex-col  gap-9  `
