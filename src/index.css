@@ -3,8 +3,6 @@
 
 @theme {
   --font-poppins:'Poppins', 'sans-serif'
-
-
 }
 
 
@@ -21,7 +19,6 @@
 
 
 body {
- /* overflow: hidden; */
  overflow-x: hidden;
   color: white;
 }
