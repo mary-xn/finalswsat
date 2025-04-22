@@ -42,7 +42,7 @@ export default function NavBar() {
     hover:cursor-pointer
     hover:shadow-xs
     transition
-    duration-200
+    duration-500
   `;
 
   const contactStyles = `
@@ -54,7 +54,7 @@ export default function NavBar() {
     hover:bg-orange-700
     hover:cursor-pointer
     transition
-    duration-200
+    duration-500
   `;
 
   return (
@@ -78,7 +78,7 @@ export default function NavBar() {
                 key={section.id}
                 to={section.id}
                 smooth={true}
-                duration={200}
+                duration={500}
                 offset={-100} 
                 spy={true}
                 onSetActive={() => setActiveSection(section.id)}
@@ -102,7 +102,7 @@ export default function NavBar() {
             <Link
               to="contact"
               smooth={true}
-              duration={200}
+              duration={500}
               offset={-100}
               spy={true}
               onSetActive={() => setActiveSection('contact')}
@@ -130,8 +130,8 @@ export default function NavBar() {
                 key={section.id}
                 to={section.id}
                 smooth={true}
-                duration={200}
-                offset={-100}
+                duration={500}
+                offset={-150}
                 spy={true}
                 onSetActive={() => setActiveSection(section.id)}
                 className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}
@@ -153,7 +153,7 @@ export default function NavBar() {
             <Link
               to="contact"
               smooth={true}
-              duration={200}
+              duration={500}
               offset={-100}
               spy={true}
               onSetActive={() => setActiveSection('contact')}
