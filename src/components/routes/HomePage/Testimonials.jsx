@@ -46,7 +46,7 @@ export default function Testimonials() {
 
  
   return (
-    <motion.section id="testimonials" className="min-w-screen text-white flex flex-col  items-center gap-9 py-20 md:py-40  xl:py-42"
+    <motion.section id="testimonials" className="min-w-screen text-white flex flex-col  items-center gap-9 py-15 md:py-40  xl:py-42"
     variants={fadeIn("up", 0.7)}
     initial="hidden"
     whileInView="show"

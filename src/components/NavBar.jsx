@@ -58,7 +58,7 @@ export default function NavBar() {
   `;
 
   return (
-    <nav className="sticky top-0 z-[99] bg-black/5 shadow-sm backdrop-blur-xs">
+    <nav className="sticky top-0 z-[99] bg-slate-900/50 shadow-sm backdrop-blur-xs">
       <div className="flex justify-between items-center px-5 py-4 md:px-10 md:py-5">
         <div className="flex justify-center items-center gap-1">
           <img className="w-[50px]" src={docuLogoo} alt="logo" />
@@ -78,7 +78,7 @@ export default function NavBar() {
                 key={section.id}
                 to={section.id}
                 smooth={true}
-                duration={500}
+                duration={200}
                 offset={-100} 
                 spy={true}
                 onSetActive={() => setActiveSection(section.id)}
@@ -102,7 +102,7 @@ export default function NavBar() {
             <Link
               to="contact"
               smooth={true}
-              duration={500}
+              duration={200}
               offset={-100}
               spy={true}
               onSetActive={() => setActiveSection('contact')}
@@ -130,8 +130,8 @@ export default function NavBar() {
                 key={section.id}
                 to={section.id}
                 smooth={true}
-                duration={500}
-                offset={-150}
+                duration={200}
+                offset={-100}
                 spy={true}
                 onSetActive={() => setActiveSection(section.id)}
                 className={`${routeStyles} ${activeSection === section.id ? 'text-orange-500 font-semibold' : ''}`}
@@ -153,8 +153,8 @@ export default function NavBar() {
             <Link
               to="contact"
               smooth={true}
-              duration={500}
-              offset={-100}
+              duration={200}
+              offset={-130}
               spy={true}
               onSetActive={() => setActiveSection('contact')}
               className={`${contactStyles} ${activeSection === 'contact' ? 'bg-orange-500 text-white font-semibold' : ''}`}

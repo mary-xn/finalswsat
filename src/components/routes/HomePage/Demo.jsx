@@ -14,7 +14,7 @@ export default function Demo() {
   return (
     <motion.section
       id="demo"
-      className="flex flex-col items-center gap-5  w-full pt-[100px] md:pt-[30px] xl:pt-[0px]  px-4  md:px-8 relative min-w-screen min-h-screen"
+      className="flex flex-col items-center gap-5  w-full pt-[200px] md:pt-[30px] xl:pt-[10px]  px-4  md:px-8 relative min-w-screen min-h-screen"
       
     >
       <motion.div className="text-center">

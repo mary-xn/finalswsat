@@ -77,7 +77,7 @@ export default function Features() {
 
 
   return (
-    <motion.section id="features" className="flex flex-col w-full items-center gap-25 px-5   pb-[30px] min-h-screen "
+    <motion.section id="features" className="flex flex-col py-20 w-full items-center gap-25 px-5 pb-[200px] min-h-screen "
       variants={fadeIn("up", 0.7)}
       initial="hidden"
       whileInView="show"
