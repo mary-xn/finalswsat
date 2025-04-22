@@ -1,7 +1,7 @@
 import React from 'react'
-import TestimonialCarousel from '../TestimonialCarousel';
+import TestimonialCarousel from '../../TestimonialCarousel'
 import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { fadeIn } from '../../../variants';
 
 
 export default function Testimonials() {

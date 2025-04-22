@@ -1,12 +1,12 @@
 import React from 'react';
-import webprev from '../../assets/webprev.png';
+import webprev from '../../../assets/webprev.png';
 import { motion } from 'motion/react';
-import { fadeIn } from '../../variants';
-import javaLogo from '../../assets/techSTack/javaLogo.png';
-import mysqlLogo from '../../assets/techSTack/mysqlLogo.png';
-import reactLogo from '../../assets/techSTack/reactLogo.png';
-import springbootLogo from '../../assets/techSTack/springbootLogo.png';
-import tailwindLogo from '../../assets/techSTack/tailwindLogo.png';
+import { fadeIn } from '../../../variants';
+import javaLogo from '../../../assets/techSTack/javaLogo.png';
+import mysqlLogo from '../../../assets/techSTack/mysqlLogo.png';
+import reactLogo from '../../../assets/techSTack/reactLogo.png';
+import springbootLogo from '../../../assets/techSTack/springbootLogo.png';
+import tailwindLogo from '../../../assets/techSTack/tailwindLogo.png';
 import { Tooltip } from 'react-tooltip';
 
 export default function About() {
