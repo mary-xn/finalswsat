@@ -7,6 +7,9 @@ import QR from './components/routes/FeaturePages/QR'
 import Role from './components/routes/FeaturePages/Role'
 import ScrollToTop from './components/ScrollToTop'
 import Secure from './components/routes/FeaturePages/Secure'
+import Vision from './components/routes/AboutPages/Vision'
+import Developer from './components/routes/AboutPages/Developer'
+import Purpose from './components/routes/AboutPages/Purpose'
 
 export default function App() {
   return (
@@ -19,12 +22,14 @@ export default function App() {
       <NavBar />
       <ScrollToTop/>
       <Routes>
-      <Route path="/finalswsat" element={<HomePage/>}/>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/Automated" element={<Automated/>}  />
         <Route path="/QR" element={<QR/>}  />
         <Route path="/Role" element={<Role/>}  />
         <Route path="/Secure" element={<Secure/>}  />
+        <Route path="/Developer" element={<Developer/>}/>
+        <Route path="/Vision" element={<Vision/>}  />
+        <Route path="/Purpose" element={<Purpose/>}  />
       </Routes>
       </div>
       

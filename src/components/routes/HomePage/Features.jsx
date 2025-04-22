@@ -15,7 +15,7 @@ export default function Features() {
      px-8 py-15 xl:py-10 xl:bg-orange-50 md:bg-white  rounded-lg transition-all duration-500 transform 
     lg:hover:-translate-y-5 hover:shadow-lg ease-in-out hover:duration-800 lg:hover:bg-orange-600
     md:hover:bg-orange-600
-    hover:cursor-pointer group hover:text-white flex flex-col items-center gap-4 
+    hover:cursor-pointer group hover:text-white flex flex-col items-center gap-3 
     xl:active:scale-95 xl:active:rotate-2  
     md:active:scale-95 
     border
@@ -26,7 +26,7 @@ export default function Features() {
   `;
 
   const description = ` lg:text-md md:text-base
-  text-white md:text-black xl:text-black  text-justify group-hover:text-white
+  text-white md:text-black xl:text-black  text-justify group-hover:text-white mb-6
   
   `;
 
@@ -71,7 +71,7 @@ export default function Features() {
     xl:w-[280px]
   `;
 
-  const buttonStyles =`border text-white md:text-black xl:text-black p-3 flex justify-center items-center text-base rounded-lg group-hover:text-white hover:cursor-pointer active:bg-orange-700 absolute w-[170px] sm:right-[23%] md:right-[30%] 2xl:right-[32%] xl:right-[23%] lg:right-[11%] xl:bottom-1 right-[20%] bottom-3 sm:right-[20%] xl:hover:bg-slate-900 md:hover:bg-slate-900 sm:hover:bg-slate-900 hover:bg-orange-600 hover:border-none`
+  const buttonStyles =`border text-white md:text-black xl:text-black p-3 flex justify-center items-center text-base rounded-lg group-hover:text-white hover:cursor-pointer active:bg-orange-700 absolute w-[170px]  [@media(min-width:480px)]:right-[32%] md:right-[30%] 2xl:right-[32%] xl:right-[23%] lg:right-[11%] xl:bottom-1 right-[20%] bottom-3 sm:right-[20%] xl:hover:bg-slate-900 md:hover:bg-slate-900 sm:hover:bg-slate-900 hover:bg-orange-600 hover:border-none`
 
   const iconStyles = `text-xl font-bold`
 
