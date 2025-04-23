@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center xl:justify-start md:justify-start">
           <img src={docuLogoo} className="w-[40px]"></img>
-          <h3 className="text-xl font-semibold text-white ">Docu<span className="text-orange-500">Forge</span></h3>
+          <h3 className="text-xl font-semibold text-white ">Docu<span className="text-orange-500">Bayan</span></h3>
           </div>
           <p className="text-xs text-gray-400">Developed with ❤️ for the community</p>
           <p className="text-xs text-gray-400">Developer: Mary Sembrero</p>
@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
 
       <hr className="my-4 border-t border-gray-700" />
-      <p className="text-sm text-center text-gray-400">© {new Date().getFullYear()} DocuForge. All Rights Reserved.</p>
+      <p className="text-sm text-center text-gray-400">© {new Date().getFullYear()} DocuBayan. All Rights Reserved.</p>
     </footer>
   )
 }

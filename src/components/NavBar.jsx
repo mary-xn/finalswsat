@@ -63,7 +63,7 @@ export default function NavBar() {
         <div className="flex justify-center items-center gap-1">
           <img className="w-[50px]" src={docuLogoo} alt="logo" />
           <div className="text-xl font-bold">
-            Docu<span className="text-orange-700">Forge</span>
+            Docu<span className="text-orange-700">Bayan</span>
           </div>
         </div>
 
