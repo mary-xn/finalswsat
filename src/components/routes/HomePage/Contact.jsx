@@ -5,6 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 import contactimg from '../../../assets/contactimg.png'
 import { fadeIn } from '../../../variants';
 import { motion } from "framer-motion";
+import { FiSend } from "react-icons/fi";
 
 export default function Contact() {
   const iconStyles = `text-2xl hover:cursor-pointer`
@@ -118,9 +119,12 @@ export default function Contact() {
           <div className="text-center xl:text-right">
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md shadow-md transition duration-200 hover:cursor-pointer"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md shadow-md transition duration-200 hover:cursor-pointer hover:text-black"
             >
-              Send Message
+              <div className="flex gap-2 items-center justify-center">
+                <p>Send Message</p>
+                <FiSend className="text-lg "/>
+              </div>
             </button>
           </div>
         </motion.form>

@@ -16,7 +16,6 @@ export default function Developer() {
   const containerStyles = ` flex flex-col  gap-9  `
   const outsideContainerStyles = `gap-5  w-[310px] sm:w-[450px] md:w-[550px] lg:w-[650px]   xl:w-[700px]`
 
- 
   useEffect(() => {
     window.scrollTo(0, 0); 
   }, []);
