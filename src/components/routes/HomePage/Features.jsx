@@ -71,7 +71,7 @@ export default function Features() {
     xl:w-[280px]
   `;
 
-  const buttonStyles =`border  text-white md:text-black xl:text-black p-3 flex justify-center items-center text-base rounded-lg group-hover:text-white hover:cursor-pointer active:bg-orange-700 absolute bottom-5 xl:left-[30%] sm:left-[25%] w-[170px]   xl:hover:bg-slate-900 md:hover:bg-slate-900 sm:hover:bg-slate-900 hover:bg-orange-600 hover:border-none [@media(min-width:480px)]:right-[32%] [@media(min-width:400px)]:right-[25%] `
+  const buttonStyles =`border  text-white md:text-black xl:text-black p-3 flex justify-center items-center text-base rounded-lg group-hover:text-white hover:cursor-pointer active:bg-orange-700 absolute bottom-5 xl:left-[30%] sm:left-[25%] w-[170px]   xl:hover:bg-slate-900 md:hover:bg-slate-900 sm:hover:bg-slate-900 hover:bg-orange-600 hover:border-none [@media(min-width:480px)]:right-[32%] [@media(min-width:400px)]:right-[25%] [@media(min-width:370px)]:right-[25%] `
 
   const iconStyles = `text-xl font-bold`
 
