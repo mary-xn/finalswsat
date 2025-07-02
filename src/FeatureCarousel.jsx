@@ -33,22 +33,22 @@ export default function FeatureCarousel({ slides }) {
         ))}
       </div>
 
-      <div className="absolute inset-0 flex justify-between items-center px-4 pointer-events-none">
+      <div className="absolute -right-4 mt-1 flex gap-4 items-center px-4 pointer-events-none">
         <button
           onClick={previousSlide}
-          className="bg-orange-300 hover:bg-orange-400 text-white rounded-full p-2 text-xl pointer-events-auto"
+          className="bg-orange-400 hover:bg-orange-400 text-white rounded-full p-2 text-xl pointer-events-auto"
         >
           <FaArrowLeftLong />
         </button>
         <button
           onClick={nextSlide}
-          className="bg-orange-300 hover:bg-orange-400 text-white rounded-full p-2 text-xl pointer-events-auto"
+          className="bg-orange-400 hover:bg-orange-400 text-white rounded-full p-2 text-xl pointer-events-auto"
         >
           <FaArrowRightLong />
         </button>
       </div>
 
-      <div className="mt-8 flex flex-wrap justify-center gap-3 w-full">
+      <div className="mt-12 flex flex-wrap justify-center gap-3 w-full">
         {slides.map((_, i) => (
           <div
             key={i}
