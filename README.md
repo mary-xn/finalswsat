@@ -19,7 +19,7 @@ This project is built with:
 
 - ⚛️ **React.js** – For building a dynamic, component-based user interface.
 - 🎨 **Tailwind CSS** – For rapid UI styling and responsive design.
-- 💡 Possibly other supporting tools/libraries (e.g. React Router, icons, etc.)
+- 💡 And other supporting tools/libraries (e.g. React Router, icons, etc.)
 
 ## 🚀 How to Run This Project Locally
 
